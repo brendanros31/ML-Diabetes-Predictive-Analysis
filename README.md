@@ -79,7 +79,7 @@ git clone https://github.com/brendanros31/ML-Diabetes-Predictive-Analysis.git
 cd ML-Diabetes-Predictive-Analysis
 
 pip install -r requirements.txt
-python main.ipynb
+jupyter notebook main.ipynb
 ```
 
 ## Project Structure
