@@ -5,7 +5,7 @@ from sklearn.ensemble import RandomForestClassifier
 
 
 
-def build_model(model_type, params=None):
+def build_model(model_type: object, params=None):
     if model_type == 'GaussianNB':
         return GaussianNB(**(params or {}))
     
@@ -20,5 +20,5 @@ def build_model(model_type, params=None):
 
 
 
-def train_model(model_obj, X_train, y_train):
+def train_model(model_obj: object, X_train: object, y_train: object):
     return model_obj.fit(X_train, y_train)

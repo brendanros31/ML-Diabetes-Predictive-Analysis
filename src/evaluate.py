@@ -8,7 +8,7 @@ from sklearn import metrics
 
 
 # Prediction Stats
-def evaluate(model_obj, X_test, y_test):
+def evaluate(model_obj: object, X_test, y_test: object):
         y_pred = model_obj.predict(X_test)   # Predictions
         
         print(model_obj)
@@ -18,7 +18,7 @@ def evaluate(model_obj, X_test, y_test):
 
 
 # Model Visiual comparision
-def visual_compare(model_name_list, model_obj_list, X_test, y_test):   
+def visual_compare(model_name_list: list[str], model_obj_list: list[object], X_test, y_test):   
         
     list_metrics = {"accuracy": [], "precision": [], "recall": [], "f1": []}
 
